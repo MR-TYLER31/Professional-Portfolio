@@ -59,7 +59,7 @@ body {
 
 .heading-primary-main {
   display: block;
-  font-size: 3vw;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 10px;
   margin-top: 4rem;
@@ -70,7 +70,7 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 10px;
 
