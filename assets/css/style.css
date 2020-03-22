@@ -1,145 +1,160 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* border-sizing: border-box; */
-  }
-  
-  
-  
-  body {
-    position: relative;
-    height: 100vh;
-    background: url('../img/background.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top;
-    position: relative;
-    font-family: 'Roboto Slab', serif;
-  }
-  
-  .navbar {
+  margin: 0;
+  padding: 0;
+  /* border-sizing: border-box; */
+}
+
+
+
+body {
+  position: relative;
+  height: 100vh;
+  background: url('../img/background.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar {
   background: black;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #fff 2px solid;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  background: black;
+}
+
+.text-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+.heading-primary-main {
+  display: block;
+  font-size: 3vw;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+
+  animation: moveIn 3s;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 2vw;
+  font-weight: 700;
+  letter-spacing: 10px;
+
+  animation: moveIn 3s;
+}
+
+.portfolio-btn .btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 0;
+  margin-top: 40px;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #666;
+  font-weight: 700;
+}
+
+.btn-white:hover {
+  color: #000;
+}
+
+.btn-animated {
+  animation: moveIn 3s .75s;
+  animation-fill-mode: backwards;
+}
+
+#social-icons a {
+  color: white;
+
+  animation: moveIn 3s;
+}
+
+
+@keyframes moveIn {
+  0% {
+    opacity: 0;
   }
-  
-  .navbar .nav-link{
-    font-size: 14px;
-    color: white;
-    text-transform: uppercase;
-    padding-left: 1rem !important;
-   padding-right: 1rem !important;
+
+  80% {
+    opacity: .5;
   }
-  
-  .navbar .nav-item.active {
-    border-left: #fff 2px solid;
+
+  100% {
+    opacity: 1;
   }
-  
-  .navbar-brand, .navbar-brand:hover {
-    color: white;
-    text-transform: uppercase;
-  }
-  
-  .navbar-toggler {
-    background: black;
-  }
-  
-  .text-box {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-  }
-  
-  
-  .heading-primary-main {
-    display: block;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 10px;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-  
-    animation: moveIn 3s;
-  }
-  
-  .heading-primary-sub {
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 10px;
-  
-    animation: moveIn 3s;
-  }
-  
-  .portfolio-btn .btn:link,
-  .btn:visited {
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 15px 40px;
-      display: inline-block;
-      border-radius: 0;
-      margin-top: 40px;
-  }
-  
-  .btn-white {
-    background-color: #fff;
-    color: #666;
-    font-weight: 700;
-  }
-  
-  .btn-white:hover {
-    color: #000;
-  }
-  
-  .btn-animated {
-    animation: moveIn 3s .75s;
-    animation-fill-mode: backwards;
-  }
-  
-  #social-icons a {
-    color: white;
-  
-    animation: moveIn 3s ;
-  }
-  
-  
-  @keyframes  moveIn {
-    0% {
-      opacity: 0;
-    }
-  
-    80% {
-      opacity: .5;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  
-  /* Portfolio */
-  .card p {
-    color: #3f3f3f;
-  }
-  
-  .card ul li {
-    list-style-type: none;
-  }
-  
-  /* .card-btn a {
+}
+
+
+/* Portfolio */
+.card p {
+  color: #3f3f3f;
+}
+
+.card ul li {
+  list-style-type: none;
+}
+
+/* .card-btn a {
   
   } */
-  
-  
-  
-  /* About Me Section */
-  #me {
-    margin-top: 10%;
-    margin-left: 20%;
+
+.card-img-top {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+
+
+/* About Me Section */
+#me {
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .card-img-top {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
   }
+}
